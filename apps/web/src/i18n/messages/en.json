@@ -1,0 +1,19 @@
+{
+  "app": {
+    "name": "Blaze POS"
+  },
+  "navigation": {
+    "customerDashboard": "Customer Dashboard",
+    "stationDashboard": "Station Dashboard",
+    "supplierDashboard": "Supplier Dashboard",
+    "platformDashboard": "Platform Dashboard"
+  },
+  "statuses": {
+    "requestReceived": "Request received",
+    "vehicleCheckedIn": "Vehicle checked in",
+    "quoteReady": "Quote ready for approval",
+    "awaitingParts": "Waiting for parts",
+    "serviceInProgress": "Service in progress",
+    "readyForCollection": "Ready for collection"
+  }
+}

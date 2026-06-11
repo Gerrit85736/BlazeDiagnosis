@@ -1,27 +1,17 @@
 {
-  "name": "vehicle-service-platform",
-  "version": "0.1.0",
-  "private": false,
-  "workspaces": [
-    "backend",
-    "frontend"
-  ],
+  "name": "blaze-pos",
+  "private": true,
+  "packageManager": "pnpm@10.0.0",
   "scripts": {
-    "dev": "npm run dev --workspace backend",
-    "dev:backend": "npm run dev --workspace backend",
-    "dev:frontend": "npm run dev --workspace frontend",
-    "build": "npm run build --workspaces",
-    "build:backend": "npm run build --workspace backend",
-    "build:frontend": "npm run build --workspace frontend",
-    "lint": "npm run lint --workspaces",
-    "test": "npm run test --workspaces",
-    "db:generate": "npm run prisma:generate --workspace backend",
-    "db:migrate": "npm run prisma:migrate --workspace backend",
-    "db:push": "npm run prisma:push --workspace backend",
-    "db:seed": "npm run prisma:seed --workspace backend"
+    "dev": "pnpm --filter @blaze-pos/web dev",
+    "build": "pnpm --filter @blaze-pos/web build",
+    "lint": "pnpm --filter @blaze-pos/web lint",
+    "format": "pnpm --filter @blaze-pos/web format",
+    "typecheck": "pnpm --filter @blaze-pos/web typecheck",
+    "typegen": "pnpm --filter @blaze-pos/web typegen"
   },
-  "engines": {
-    "node": ">=20.0.0",
-    "npm": ">=10.0.0"
+  "devDependencies": {
+    "prettier": "latest",
+    "prettier-plugin-organize-imports": "latest"
   }
 }

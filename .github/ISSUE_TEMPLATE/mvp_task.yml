@@ -1,0 +1,61 @@
+name: MVP Task
+about: Task for Week 2-4 MVP delivery
+labels: [mvp]
+body:
+  - type: dropdown
+    id: week
+    attributes:
+      label: Week
+      options:
+        - Week 2
+        - Week 3
+        - Week 4
+    validations:
+      required: true
+  - type: dropdown
+    id: pod
+    attributes:
+      label: Pod
+      options:
+        - Foundation / Auth / Tenant / Roles
+        - Customer / Vehicle
+        - Job Card / Workshop Board
+        - Quote Approval
+        - Parts / Supplier
+        - Invoice / Notification / Audit
+        - Cloud / CI
+        - Cyber Security / QA
+    validations:
+      required: true
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What should be achieved?
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: What must be true before this can be marked done?
+      value: |
+        - [ ] 
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / Constraints
+      description: Add dependencies, risks, or instructions.
+  - type: textarea
+    id: testing
+    attributes:
+      label: Testing / Review Required
+      value: |
+        - [ ] Typecheck/build impact considered
+        - [ ] Security impact considered
+        - [ ] Tenant/role access considered
+        - [ ] Documentation updated where required
